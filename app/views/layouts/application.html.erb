@@ -54,7 +54,8 @@
                   <h4 class="text-right">In Partnership With </h4>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                  <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/SLT-Logo-green.png" />
+                  <%= link_to image_tag("slt-logo.png", alt: "ForesTree Equipment Trader"),
+                        {:class => 'websiteLogo'} %>
                 </div>
               </div>
             </div>
@@ -73,8 +74,7 @@
                 <li>
                   <a class="navbar-brand fet-logo" href="#">
                     <%= link_to image_tag("fet-logo.png", alt: "ForesTree Equipment Trader"),
-				  		{:controller => 'pages', :action => 'home'},
-				  		{:class => 'websiteLogo'} %>
+				  		          {:class => 'websiteLogo'} %>
                   </a>
                 </li>
               </ul>

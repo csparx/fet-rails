@@ -1,0 +1,138 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "compass";
+
+ /* SASS Colors */
+$darkgrey: #292929;
+$lightgrey: #f6f5f5;
+$fetgreen: #218C40;
+$fetorange: #E39709;
+$fetbrown: #422e13;
+$fettext: #444;
+$footerblack: #29292B;
+
+body{
+  margin: 0px;
+}
+.flex{
+  display: flex;
+}
+.slick-arrow{
+  display: none!important;
+}
+.fet-logo{
+  &:hover{
+    background-color: transparent!important;
+  }
+}
+.search-slider{
+  position: absolute;
+  top: 0;
+}
+.top-bar-align{
+  padding: 15px 0 0 0;
+}
+.main-nav{
+  margin-bottom: 0px;
+}
+.fet-green-line{
+  background-color: $fetgreen;
+  width: 100px;
+  height: 1px;
+  margin: 10px auto;
+}
+.fetorange-outline{
+  border: $fetorange solid 4px;
+}
+
+/* Button Style */
+.btn-fetorange{
+  background-color: $fetorange;
+  color: white;
+}
+
+/* Text Style */
+.footer-icons{
+  a{
+    font-size: 28px;
+    margin-right: 10px;
+  }
+}
+#jmwood-title{
+  color: $fetorange;
+  font-size: 52px;
+  line-height: 60px;
+  font-weight: 400;
+}
+.fet-title{
+  font-weight: 800;
+  font-size: 31.5px;
+  line-height: 40px;
+  color: $fettext;
+}
+.main-nav-links{
+  a{
+    margin-top: 25px;
+    color: $darkgrey;
+    font-size: 16px;
+    &:hover{
+      border-top: 1px solid $fetgreen;
+      background-color: lighten($darkgrey, 80%)!important;
+    }
+  }
+}
+
+/* Background Style */
+.bg-footerblack{
+  background-color: $footerblack;
+  color: white!important;
+  a {
+    color: white;
+  }
+}
+.bg-lightgrey{
+  background-color: $lightgrey;
+}
+.bg-fetgreen{
+  background-color: $fetgreen;
+  color: white!important;
+}
+.bg-fetorange{
+  background-color: $fetorange;
+  color: white!important;
+}
+.bg-fetbrown{
+  background-color: $fetbrown;
+  color: white!important;
+}
+.bg-hover-fetgreen{
+  &:hover{
+    background-color: $fetgreen;
+  }
+}
+
+/* Bootstrap Custom */
+.bg-primary {
+    color: #fff;
+    background-color: $darkgrey;
+    a {
+      color: white;
+    }
+}
+.carousel-inner {
+    width: 100%;
+    max-height: 500px !important;
+}
