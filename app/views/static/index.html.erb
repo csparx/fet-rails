@@ -1,0 +1,75 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+<div class="fluid-container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs">
+			<div class="home-slider">
+				<div><%= link_to image_tag("slider/Forestree-slider-01.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+				<div><%= link_to image_tag("slider/Forestree-slider-02.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+				<div><%= link_to image_tag("slider/Forestree-slider-03.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+				<div><%= link_to image_tag("slider/Forestree-slider-04.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+				<div><%= link_to image_tag("slider/Forestree-slider-05.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+				<div><%= link_to image_tag("slider/Forestree-slider-06.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+				<div><%= link_to image_tag("slider/Forestree-slider-07.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+				<div><%= link_to image_tag("slider/Forestree-slider-08.jpg", alt: "ForesTree Equipment Trader", width: "100%") %></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs">
+			<h2 class="text-center">Featured Dealers</h2>
+			<hr>
+			<div class="featured">
+				<div><%= link_to image_tag("featured-dealers/Calvalier-web.jpg") %></div>
+				<div><%= link_to image_tag("featured-dealers/Carter-web.jpg") %></div>
+				<div><%= link_to image_tag("featured-dealers/Chambers-web.jpg") %></div>
+				<div><%= link_to image_tag("featured-dealers/Doggett-web.jpg") %></div>
+				<div><%= link_to image_tag("featured-dealers/Edwardstree-web.jpg") %></div>
+				<div><%= link_to image_tag("featured-dealers/EEB-web.jpg") %></div>
+				<div><%= link_to image_tag("featured-dealers/Equipmentparts-web.jpg") %></div>
+			</div>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs">
+			<h2 class="text-center">Listings</h2>
+			<hr>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+	  $('.home-slider').slick({
+		autoplay: true,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
+	  });
+	  $('.featured').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	  });
+	});
+</script>

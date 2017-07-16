@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Fet</title>
+    <title>ForesTree Equipment Trader</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewpoint" content="width=device-width, intial-scale=1" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
@@ -9,7 +9,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag "application" %>
   </head>
 
   <body>
@@ -22,27 +22,27 @@
               <div class="row">
                 <a href="https://www.facebook.com/forestreetrader/">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
-                  <h4><i class="fa fa-facebook" aria-hidden="true"></i> <span class="visible-lg-inline-block">Facebook</span></h4>
+                  <i class="fa fa-facebook fa-lg" aria-hidden="true"></i> <span class="visible-lg-inline-block">Facebook</span>
                 </div>
                 </a>
                 <a href="https://twitter.com/FE_Trader">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
-                  <h4><i class="fa fa-twitter" aria-hidden="true"></i> <span class="visible-lg-inline-block">Twitter</span></h4>
+                  <i class="fa fa-twitter fa-lg" aria-hidden="true"></i> <span class="visible-lg-inline-block">Twitter</span>
                 </div>
                 </a>
                 <a href="https://www.youtube.com/channel/UCZ1p_k-W6gNKhIcunkvgKEw">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
-                  <h4><i class="fa fa-youtube" aria-hidden="true"></i> <span class="visible-lg-inline-block">Youtube</span></h4>
+                  <i class="fa fa-youtube fa-lg" aria-hidden="true"></i> <span class="visible-lg-inline-block">Youtube</span>
                 </div>
                 </a>
                 <a href="https://plus.google.com/+ForesTreeEquipmentTraderMontgomery/">
-                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 bg-hover-fetgreen">
-                  <h4><i class="fa fa-google-plus" aria-hidden="true"></i> <span class="visible-lg-inline-block">Google+</span></h4>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 bg-hover-fetgreen">
+                  <i class="fa fa-google-plus fa-lg" aria-hidden="true"></i> <span class="visible-lg-inline-block">Google+</span>
                 </div>
                 </a>
                 <a href="http://www.forestreetrader.com/fet-newsletter/">
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bg-hover-fetgreen">
-                  <h4><i class="fa fa-envelope" aria-hidden="true"></i> <span class="visible-lg-inline-block">Newsletter</span></h4>
+                <div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 bg-hover-fetgreen">
+                  <i class="fa fa-envelope fa-lg" aria-hidden="true"></i> <span class="visible-lg-inline-block">Newsletter</span>
                 </div>
                 </a>
               </div>
@@ -82,16 +82,16 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                   <ul class="nav navbar-nav navbar-right main-nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><%= link_to "Home", root_path%></li>
+                    <li><%= link_to "About", about_path%></li>
+                    <li><%= link_to "Blog", blog_path%></li>
                     <li><a href="#">Media Center</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Login</a></li>
                   </ul>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                  <ul class="nav navbar-nav navbar-right main-nav-links">
+                  <ul class="nav navbar-nav navbar-right">
                     <li><a class="bg-fetgreen" href="#">Create Listing</a></li>
                     <li><a class="bg-fetgreen" href="#">Browse Listings</a></li>
                     <li><a class="bg-fetorange" href="#">Auction</a></li>
@@ -106,14 +106,10 @@
       </div>
       <!-- Main Nav Bar End -->
     </header>
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 co-md-12 col-sm-12 col-xs-12">
-          <%= yield %>
-        </div>
-      </div>
-    </div>
+    <body>
+        <%= yield %>
+    </body>
+    
           
 
     <footer>
