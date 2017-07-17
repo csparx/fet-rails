@@ -1,0 +1,67 @@
+
+<%= form_with(model: listing, local: true) do |form| %>
+<% if listing.errors.any? %>
+  <div id="error_explanation">
+    <h2><%= pluralize(listing.errors.count, "error") %> prohibited this listing from being saved:</h2>
+
+    <ul>
+    <% listing.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.number_field :price, id: :listing_price, placeholder: "Price" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :category, id: :listing_category, placeholder: "Category" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :equipment_type, id: :listing_equipment_type, placeholder: "Equipment Type" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :make, id: :listing_make, placeholder: "Make" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :model, id: :listing_model, placeholder: "Model" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.number_field :year, id: :listing_year, placeholder: "Year" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.number_field :hours, id: :listing_hours, placeholder: "Hours" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :condition, id: :listing_condition, placeholder: "Condition" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.number_field :tire_percentage, id: :listing_tire_percentage, placeholder: "Tire Percentage" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :serial, id: :listing_serial, placeholder: "Serial Number" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :stock_number, id: :listing_stock_number, placeholder: "Stock Number" %>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <%= form.text_area :description, id: :listing_description, placeholder: "Description", width: "100%" %>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <%= form.text_field :listing_address, id: :listing_listing_address, placeholder: "Listing Address" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :listing_contact, id: :listing_listing_contact, placeholder: "Listing Contact" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.number_field :listing_phone, id: :listing_listing_phone, placeholder: "Listing Phone" %>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+  <%= form.text_field :listing_email, id: :listing_listing_email, placeholder: "Listing Email" %>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 actions">
+  <%= form.submit %>
+</div>
+      
+<% end %>

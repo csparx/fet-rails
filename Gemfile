@@ -15,6 +15,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'compass-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+gem 'devise', '~> 4.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

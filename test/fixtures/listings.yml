@@ -1,0 +1,37 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 1
+  category: MyString
+  type: 
+  make: 
+  model: MyString
+  year: 1
+  hours: 1
+  condition: MyString
+  tire_percentage: 1
+  serial: MyString
+  stock_number: MyString
+  description: MyText
+  listing_address: MyString
+  listing_contact: MyString
+  listing_phone: 1
+  listing_email: MyString
+
+two:
+  price: 1
+  category: MyString
+  type: 
+  make: 
+  model: MyString
+  year: 1
+  hours: 1
+  condition: MyString
+  tire_percentage: 1
+  serial: MyString
+  stock_number: MyString
+  description: MyText
+  listing_address: MyString
+  listing_contact: MyString
+  listing_phone: 1
+  listing_email: MyString

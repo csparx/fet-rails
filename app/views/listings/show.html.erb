@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @listing.price %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @listing.category %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @listing.equipment_type %>
+</p>
+
+<p>
+  <strong>Make:</strong>
+  <%= @listing.make %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @listing.model %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @listing.year %>
+</p>
+
+<p>
+  <strong>Hours:</strong>
+  <%= @listing.hours %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @listing.condition %>
+</p>
+
+<p>
+  <strong>Tire percentage:</strong>
+  <%= @listing.tire_percentage %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @listing.serial %>
+</p>
+
+<p>
+  <strong>Stock number:</strong>
+  <%= @listing.stock_number %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @listing.description %>
+</p>
+
+<p>
+  <strong>Listing address:</strong>
+  <%= @listing.listing_address %>
+</p>
+
+<p>
+  <strong>Listing contact:</strong>
+  <%= @listing.listing_contact %>
+</p>
+
+<p>
+  <strong>Listing phone:</strong>
+  <%= @listing.listing_phone %>
+</p>
+
+<p>
+  <strong>Listing email:</strong>
+  <%= @listing.listing_email %>
+</p>
+
+<%= link_to 'Edit', edit_listing_path(@listing) %> |
+<%= link_to 'Back', listings_path %>

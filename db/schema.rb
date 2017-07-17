@@ -10,7 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170716001449) do
+ActiveRecord::Schema.define(version: 20170717021954) do
+
+  create_table "listings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
+    t.integer "price"
+    t.string "category"
+    t.string "equipment_type"
+    t.string "make"
+    t.string "model"
+    t.integer "year"
+    t.integer "hours"
+    t.string "condition"
+    t.integer "tire_percentage"
+    t.string "serial"
+    t.string "stock_number"
+    t.text "description"
+    t.string "listing_address"
+    t.string "listing_contact"
+    t.integer "listing_phone"
+    t.string "listing_email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+  end
 
   create_table "posts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=latin1" do |t|
     t.string "title"
