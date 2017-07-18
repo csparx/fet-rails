@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<h3>List of Users</h3>
+			<table>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Email</th>
+					<th>Username</th>
+					<th>ID</th>
+				</tr>
+				<tr>
+					<% @users = User.all %>
+					<% @users.each do |user| %>
+					<td><%= user.first_name %></td>
+					<td><%= user.last_name %></td>
+					<td><%= user.email %></td>
+					<td><%= user.username %></td>
+					<td><%= user.id %></td>
+					<% end %>
+				</tr>
+			</table>
+			
+		</div>
+	</div>
+</div>

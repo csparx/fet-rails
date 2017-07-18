@@ -27,6 +27,15 @@ $footerblack: #29292B;
 body{
   margin: 0px;
 }
+footer{
+  margin-top: 20px;
+  .footwidgets{
+    padding: 10px 0 0 0;
+  }
+  .copyright{
+    padding: 10px 0;
+  }
+}
 .flex{
   display: flex;
 }
@@ -57,6 +66,7 @@ body{
 .fetorange-outline{
   border: $fetorange solid 4px;
 }
+
 
 /* Button Style */
 .btn-fetorange{
