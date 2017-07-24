@@ -1,27 +1,19 @@
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-			<p id="notice"><%= notice %></p>
+<p id="notice"><%= notice %></p>
 
-			<h1>Blog</h1>
+<h1>Blog</h1>
 
-			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-			  <%= link_to 'New Post', new_post_path %>
+<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+  <%= link_to 'New Post', new_post_path %>
 
-			  <% @posts.each do |post| %>
-			  <h2><%= post.title %></h2>
-			  <h4><%= link_to 'Show', post %> | <%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></h4>
-			  <p><%= post.body %></p>
-			  <% end %>
-			</div>
-
-
-			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-			  <a class="twitter-timeline" data-height="800" href="https://twitter.com/FE_Trader">Tweets by FE_Trader</a>
-			  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-			</div>
-		</div>
-	</div>
+  <% @posts.each do |post| %>
+  <h2><%= post.title %></h2>
+  <h4><%= link_to 'Show', post %> | <%= link_to 'Edit', edit_post_path(post) %> | <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></h4>
+  <p><%= post.body %></p>
+  <% end %>
 </div>
 
+
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+  <a class="twitter-timeline" data-height="800" href="https://twitter.com/FE_Trader">Tweets by FE_Trader</a>
+  <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 

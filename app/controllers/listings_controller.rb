@@ -25,6 +25,7 @@ class ListingsController < ApplicationController
   # POST /listings.json
   def create
     @listing = Listing.new(listing_params)
+    @listing.user = current_user
 
     respond_to do |format|
       if @listing.save
@@ -69,6 +70,6 @@ class ListingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def listing_params
-      params.require(:listing).permit(:price, :category, :equipment_type, :make, :model, :year, :hours, :condition, :tire_percentage, :serial, :stock_number, :description, :listing_address, :listing_contact, :listing_phone, :listing_email)
+      params.require(:listing).permit(:price, :category, :equipment_type, :make, :model, :year, :hours, :condition, :tire_percentage, :serial, :stock_number, :description, :listing_address, :listing_contact, :listing_phone, :listing_email, :user_id)
     end
 end

@@ -1,51 +1,39 @@
+<p id="notice"><%= notice %></p>
 
+<h1>Listings</h1>
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs">
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Price</th>
+      <th>Category</th>
+      <th>Type</th>
+      <th>Make</th>
+      <th>Model</th>
+      <th>Year</th>
+    </tr>
+  </thead>
 
-      <p id="notice"><%= notice %></p>
+  <tbody>
+    <% @listings.each do |listing| %>
+      <tr>
+        <td><%= listing.user_id %></td>
+        <td><%= listing.price %></td>
+        <td><%= listing.category %></td>
+        <td><%= listing.equipment_type %></td>
+        <td><%= listing.make %></td>
+        <td><%= listing.model %></td>
+        <td><%= listing.year %></td>
+        
+        <td><%= link_to 'Show', listing %></td>
+        <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
+        <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
 
-      <h1>Listings</h1>
-
-      <table>
-        <thead>
-          <tr>
-            <th>User</th>
-            <th>Price</th>
-            <th>Category</th>
-            <th>Type</th>
-            <th>Make</th>
-            <th>Model</th>
-            <th>Year</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <% @listings.each do |listing| %>
-            <tr>
-              <td><%= listing.user_id %></td>
-              <td><%= listing.price %></td>
-              <td><%= listing.category %></td>
-              <td><%= listing.equipment_type %></td>
-              <td><%= listing.make %></td>
-              <td><%= listing.model %></td>
-              <td><%= listing.year %></td>
-              
-              <td><%= link_to 'Show', listing %></td>
-              <td><%= link_to 'Edit', edit_listing_path(listing) %></td>
-              <td><%= link_to 'Destroy', listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-
-      <%= link_to 'New Listing', new_listing_path %>
-
-    </div>
-  </div>
-</div>
+<%= link_to 'New Listing', new_listing_path %>
 
 <br>
-
-
