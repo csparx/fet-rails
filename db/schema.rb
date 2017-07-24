@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170718191903) do
+ActiveRecord::Schema.define(version: 20170724134859) do
 
   create_table "listings", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer "price"
     t.string "category"
-    t.string "type"
+    t.string "equipment_type"
     t.string "make"
     t.string "model"
     t.integer "year"
