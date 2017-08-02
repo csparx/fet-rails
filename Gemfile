@@ -17,6 +17,9 @@ gem 'compass-rails'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'devise'
+gem 'geokit', '~> 1.11'
+gem 'geokit-rails', '~> 2.2'
+gem 'pundit', '~> 1.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
